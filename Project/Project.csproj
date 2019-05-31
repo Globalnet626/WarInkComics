@@ -75,10 +75,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\upload.aspx" />
+    <Content Include="App_Data\MainDatabase.mdf" />
+    <Content Include="App_Data\MainDatabase_log.ldf">
+      <DependentUpon>MainDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="masterpage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="masterpage.aspx.cs">
       <DependentUpon>masterpage.aspx</DependentUpon>
@@ -87,6 +99,10 @@
     <Compile Include="masterpage.aspx.designer.cs">
       <DependentUpon>masterpage.aspx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

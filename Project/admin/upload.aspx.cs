@@ -92,7 +92,7 @@ namespace Project.admin
                 request.Method = WebRequestMethods.Ftp.UploadFile;
 
                 //Enter FTP Server credentials.
-                request.Credentials = new NetworkCredential("final_cis136_project", "Pr0Gr@mP@SSW)RD");
+                request.Credentials = new NetworkCredential(Application["FTPUser"].ToString(), Application["FTPPass"].ToString());
                 request.ContentLength = fileBytes.Length;
                 request.UsePassive = true;
                 request.UseBinary = true;
@@ -107,7 +107,7 @@ namespace Project.admin
 
                 FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 
-                lblMessage.Text += fileName + " uploaded.<br />";
+                lblMessage.Text += http + fileName + " uploaded.<br />";
                 response.Close();
             }
             catch (WebException ex)

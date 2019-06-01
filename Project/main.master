@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Project.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<style>
+    #headerImage
+    {
+        display: flex;
+        justify-content: flex-start;
+        height: 20%;
+        width: 20%;
+    }
+</style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="header">
+                <img src="images/logo.png" / id="headerImage">
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -74,6 +74,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="images\headertest.png" />
     <Content Include="main.master" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
@@ -81,6 +82,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="WebForm2.aspx" />
     <None Include="packages.config" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
@@ -186,7 +188,6 @@
     <Content Include="images\SeaSeries\mis_037.jpg" />
     <Content Include="images\SeaSeries\mis_038.jpg" />
     <Content Include="images\SeaSeries\mis_039.jpg" />
-    <Content Include="ViewIssue.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -218,12 +219,12 @@
     <Compile Include="masterpage.aspx.designer.cs">
       <DependentUpon>masterpage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewIssue.aspx.cs">
-      <DependentUpon>ViewIssue.aspx</DependentUpon>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewIssue.aspx.designer.cs">
-      <DependentUpon>ViewIssue.aspx</DependentUpon>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

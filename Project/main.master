@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head runat="server">
     <!-- Bootstrap initializaiton -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,59 +11,76 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/jquery-3.0.0.min.js"></script>
     <script src="scripts/popper.min.js"></script>
-<style>
-    #headernav{
-        background-color:lightgrey;
-        box-shadow:0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
-        color:white;
-    }
-    #header{
-        background-image: url("/images/headertest.png");
-        box-shadow:0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
-    }
-    #navbarNavAltMarkup
-    {
-        color:white;
-    }
-    #headerImage
-    {
-        display: flex;
-        justify-content: flex-start;
-        height: 20%;
-        width: 20%;
-    }
-</style>
+    <style>
+        #headernav {
+            background-color: lightgrey;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+            color: white;
+        }
+
+        #header {
+            background-image: url("/images/headertest.png");
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+        }
+
+        #navbarNavAltMarkup {
+            color: white;
+        }
+
+        #headerImage {
+            display: flex;
+            justify-content: flex-start;
+            height: 20%;
+            width: 20%;
+        }
+        .img-responsive
+        {
+            height:25%;
+            max-width:50%;
+            max-height:25%;   
+
+        }
+ 
+}
+    </style>
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
     <form id="form1" runat="server">
         <div>
             <div id="headernav">
                 <div id="header">
-                <img src="images/logo.png" / id="headerImage">
-                 </div>
-                <nav class="navbar navbar-dark bg-dark navbar-expand-lg" id="headernav">
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Comics</a>
-                    <a class="nav-item nav-link disabled" href="#">Admin</a>
+                    <img src="images/logo.png" / id="headerImage">
                 </div>
-              </div>
-            </nav>
+                <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Comics</a>
+                            <a class="nav-item nav-link disabled" href="#">Admin</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="media">
-              <div class="media-body">
-            <asp:ContentPlaceHolder ID="Main" runat="server">
-            </asp:ContentPlaceHolder>
-                  </div>
+                <div class="media-body align-content-center justify-content-center">
+                    <asp:ContentPlaceHolder ID="Main" runat="server">
+                    </asp:ContentPlaceHolder>
                 </div>
-        </div>
+            </div>
+        <footer class="page-footer font-small blue pt-4">
+            <div class="footer-copyright text-center py-3">
+            &copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>, War Ink Comics.
+            </div>
+        </footer>
     </form>
 </body>
+
 </html>

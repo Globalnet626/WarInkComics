@@ -13,6 +13,15 @@ namespace Project {
     public partial class pages {
         
         /// <summary>
+        /// DynamicDataManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.DynamicData.DynamicDataManager DynamicDataManager1;
+        
+        /// <summary>
         /// ListView1 control.
         /// </summary>
         /// <remarks>
@@ -29,5 +38,14 @@ namespace Project {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        
+        /// <summary>
+        /// lblPageID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPageID;
     }
 }

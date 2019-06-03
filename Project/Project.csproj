@@ -68,13 +68,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="comics.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="default.aspx" />
     <Content Include="images\headertest.png" />
+    <Content Include="Issues.aspx" />
     <Content Include="main.master" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
@@ -82,9 +85,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="page.aspx" />
     <Content Include="pages.aspx" />
-    <Content Include="WebForm2.aspx" />
     <None Include="packages.config" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
@@ -203,8 +204,29 @@
     <Compile Include="admin\upload.aspx.designer.cs">
       <DependentUpon>upload.aspx</DependentUpon>
     </Compile>
+    <Compile Include="comics.aspx.cs">
+      <DependentUpon>comics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comics.aspx.designer.cs">
+      <DependentUpon>comics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Issues.aspx.cs">
+      <DependentUpon>Issues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Issues.aspx.designer.cs">
+      <DependentUpon>Issues.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.master.cs">
       <DependentUpon>main.master</DependentUpon>
@@ -212,13 +234,6 @@
     </Compile>
     <Compile Include="main.master.designer.cs">
       <DependentUpon>main.master</DependentUpon>
-    </Compile>
-    <Compile Include="page.aspx.cs">
-      <DependentUpon>page.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="page.aspx.designer.cs">
-      <DependentUpon>page.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages.aspx.cs">
       <DependentUpon>pages.aspx</DependentUpon>
@@ -234,13 +249,6 @@
     </Compile>
     <Compile Include="masterpage.aspx.designer.cs">
       <DependentUpon>masterpage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
